@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.3rem;
+}
+h1,h2 {
+    font-weight: bold;
+}
+ .material-symbols-outlined {
+     font-variation-settings:
+             'FILL' 0,
+             'wght' 400,
+             'GRAD' 0,
+             'opsz' 48
+ }
+ form {
+     padding: 10px 15px;
+     display: flex;
+     gap: 5px;
+ }
+ form > input {
+     flex-grow: 1;
+     padding: 10px;
+     font-family: inherit;
+     font-size: 1rem;
+     border: 1px solid lightgray;
+     border-radius: 5px;
+ }
+
+form > input:hover,
+form > input:focus
+{
+    border-color: blue;
+}
+form> button {
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: blue;
+    color: white;
+    border:1px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form> button:hover {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+form> button:active {
+    background-color: rgba(15, 15, 92, 0.85);
+}
+#tasks .task {
+    display: flex;
+}
+#task,
+#completed-tasks{
+    padding: 10px 15px;
+}
+.task {
+    display: flex;
+    padding: 10px 0;
+}
+.task a {
+    text-decoration: none;
+    color: #404040;
+}
+.task label {
+    cursor: pointer;
+}
+.task:hover label{
+    color: blue;
+}
+.task a:first-child{
+    flex-grow: 1;
+}
+
+.task a:last-child:hover{
+    color: red;
+}
+.task.completed {
+    text-decoration: line-through;
+    color: lightgray;
+}
+.task.completed:hover label{
+    color: purple;
+}
+#completed-tasks h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid lightgray;
+    padding: 10px;
+    justify-content: flex-end;
+}
+main {
+    flex-grow: 1;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+header h1 span{
+    font-size: 10rem;
+}
+#hint {
+    text-align: center;
+    color: #404040;
+}
